@@ -1,0 +1,79 @@
+﻿Q1. How to create an object in Java?
+
+
+Ans: We can create an object use ‘new’ keyword in java.
+        Scanner scan = new Scanner(System.in);
+
+
+Q2. What is the use of new keyword in Java?
+
+
+Ans: Use of new keyword in Java are listed below:
+* The new keyword in java is used to create an instance of a class, also known as objects.
+* The new keyword in java used to allocate memory for the object on the heap and the memory space where the object are stored.
+* The new keyword in java calls the constructor of a class to initialises the object’s state.
+
+
+Q3. What are the different types of variables in Java?
+
+
+Ans: There are three types of variables in Java
+1.   Local Variable: 
+* The local variable is created as a part of the block execution in which it is declared. The local variable is destroyed once the block execution completes.
+* The scope of the local variable is same as the scope of the block in which it is declared.
+* The local variable cannot be declared using static keyword.
+
+
+2. Instance Variable: 
+* Instance variables created at the time of object creation and destroyed at the time of object destruction.Hence the scope of the instance variable is exactly same as the scope of the object.
+* Instance variables are stored on the heap as the part of the object.
+* Instance variables should be declared within the class directly but outside of method or block or constructor.
+
+
+3. Static Variable:
+A variable that is declared as static is called a static variable. It cannot be local. You can create a single copy of the static variable and share it among all the instances of the class. Memory allocation for static variables happens only once when the class is loaded in the memory.
+
+Q4. What is the difference between instance and local variables?
+Ans: 
+Instance Variable 
+	* They are defined in class but outside the body of methods.  
+	* These variables are destroyed when the object is destroyed.  
+	* It can be accessed throughout the class. 
+	* These variables are given a default value if it is not assigned by code.
+	* It is not compulsory to initialize instance variables before use. 
+	* It includes access modifiers such as private, public, protected, etc.  
+
+
+	
+Local Variables
+	* They are defined as a type of variable declared within programming blocks or subroutines. 
+	* These variables are destroyed when the constructor or method is exited.
+	* Its access is limited to the method in which it is declared.
+	* These variables do not always have some value, so there must be a value assigned by code.
+ 	* It is important to initialize local variables before use.
+	* It does not include any access modifiers such as private, public, protected, etc.
+
+	
+
+Q5. In which area memory is allocated for Instance variable and Local variable?
+Ans: The methods and local variables are stored in the stack whereas the object and its instance variables are stored in the heap.
+
+
+Q6. What is Method Overloading?
+Ans: Java method overloading allows you to define multiple methods with the same name but with different parameters in Java. This enhances code readability and reduces confusion.
+
+
+For example, let’s say you need to perform addition with either two or three numbers. Instead of creating separate methods like “sum2num” and “sum3num,” you can use method overloading.
+      
+
+public class Addition {
+    // Method to add two numbers
+    public int sum(int num1, int num2) {
+        return num1 + num2;
+    }
+     
+    // Method to add three numbers
+    public int sum(int num1, int num2, int num3) {
+        return num1 + num2 + num3;
+    }
+}
