@@ -1,0 +1,139 @@
+﻿Q 1. What are the conditional operators in java?
+Ans: In Java, conditional operators check the condition and decides the desired result on the basis of both conditions.There are three types of the conditional operator in Java:
+
+
+* Conditional AND(&&): The operator is applied between two Boolean expressions. It is denoted by the two AND operators (&&). It returns true if and only if both expressions are true, else returns false.
+
+
+* Conditional OR( || ): The operator is applied between two Boolean expressions. It is denoted by the two OR operator (||). It returns true if any of the expression is true, else returns false.
+
+
+* Ternary Operator(?:): The ternary operator (? :) consists of three operands. It is used to evaluate Boolean expressions. The operator decides which value will be assigned to the variable. It is the only conditional operator that accepts three operands. It can be used instead of the if-else statement. It makes the code much more easy, readable, and shorter.
+            Syntax :  variable = (condition) ? expression1 : expression2  
+
+
+
+
+Q2. What are the types of operators based on the number of operands?
+Ans: The types of operators based on the number of operands are:
+    1. Unary Operators – Require only one operand 
+    2. Binary Operators – Require two operands.  
+    3. Ternary Operators – Require three operands.
+
+
+Q3. What is the use of switch case in Java Programming?
+Ans: In Java, the switch statement performs different actions based on various conditions. It compares the value of a variable to the values specified in the case statements. The expression associated with that case is executed when a match is found. The switch statement can also include a default case that is executed if none of the other cases are matched.
+
+
+Example: 
+class Weekdays{
+  public static void main( String args[] ){
+    int day = 3;
+    switch (day){
+      case 1:
+        System.out.println("Monday");
+        break;
+      case 2:
+        System.out.println("Tuesday");
+        break;
+      case 3:
+        System.out.println("Wednesday");
+        break;
+      case 4:
+        System.out.println("Thursday");
+        break;
+      case 5:
+        System.out.println("Friday");
+        break;
+      case 6:
+        System.out.println("Saturday");
+        break;
+      case 7:
+        System.out.println("Sunday");
+        break;
+      default:
+        System.out.println("Invalid day");
+    }
+ }
+      }
+
+
+Q4. What are the priority levels of arithmetic operator in Java?
+Ans: The priority level of arithmetic operator are as follows:
+1. High Priority = * / %
+2. Low Priority = + -
+
+
+Q5. What are conditional statements and use of conditional statements in Java?
+Ans: The conditional statement is a branch of code that can be executed depending on another condition. In Java, these clauses are called decision or selection statements.
+Types of Java conditional statements are as follows:
+1. Java If Statement
+2. Java If-Else Statement
+3. Java Switch Statement
+
+
+Uses of Java Conditional Statements:
+* Use if to specify a block of code to be executed, if a specified condition is true.
+* Use else to specify a block of code to be executed, if the same condition is false.
+* Use else if to specify a new condition to test, if the first condition is false.
+* Use switch to specify many alternative blocks of code to be executed.
+
+
+
+
+Q6.What is the Syntax of if else statement?
+Ans: The syntax of the If-Else conditional statements in java is:-
+
+
+if (condition) {
+    // Statements that will be carried out if the condition is satisfied
+} else {
+    // Statements that will be carried out if the condition is not met
+}
+
+
+Q7. What are the three types of iterative statements in Java?
+Ans: The three types of iterative statements in Java are : 
+1. For Loop
+2. While Loop
+3. Do While Loop
+
+
+Q8. Write the difference between for loop and do while loop?
+Ans: 
+Sr. No
+	For loop
+	Do while loop
+	1.
+	Syntax: For(initialization; condition;updating), { . Statements; }
+	Syntax: Do { . Statements; } While(condition);
+	2.
+	It is known as entry controlled loop
+	It is known as exit controlled loop.
+	3.
+	If the condition is not true first time than control will never enter in a loop
+	Even if the condition is not true for the first time the control will enter in a loop.
+	4.
+	There is no semicolon; after the condition in the syntax of the for loop.
+	There is semicolon; after the condition in the syntax of the do while loop.
+	5.
+	Initialization and updating is the part of the syntax.
+	Initialization and updating is not the part of the syntax
+	6.
+	For loop is use when we know the number of iterations means where the loop will terminate.
+	Do while loop is use when we don't know the number of iterations means where the loop will terminate.
+	
+
+
+
+Q9. Write a program to print number from 1 to 10.
+Ans:
+ public class Main
+{
+        public static void main(String[] args) {
+                int i,n=10;
+                for(i=1;i<=n;i++){
+                    System.out.println(i);
+                }
+        } 
+}
