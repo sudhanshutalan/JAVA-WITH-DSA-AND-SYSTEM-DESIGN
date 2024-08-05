@@ -1,0 +1,51 @@
+﻿Q1. What is statically typed and dynamically typed programming language?
+Ans: Programming languages are referred to as statically typed if the memory of the variables is provided at the time of compilation.
+For example: C, C++, JAVA.
+
+
+Q2. What is the variables in the Java?
+Ans: A variable is the name of the memory location assigned to store the values. It is a container that holds the values during execution of a Java program.
+
+
+Q3. How to assign a value to a variable?
+Ans: for assigning a value we use assignment (=) operator.
+
+
+Int num = 10;
+Float b = 9.5;
+
+
+Q4. What are the primitive data types in Java?
+Ans: Byte, short, long, float, int, char, double, boolean.
+
+
+Q5. What are Identifiers in Java?
+Ans: Identifiers in Java are names that identify elements, such as classes, variables, and methods in a program.
+In Java, an identifier is a sequence of letters, digits, and underscore characters.
+
+
+Q6. List the operators in Java?
+Ans: Operators in Java are:
+* Unary Operator,
+* Arithmetic Operator,
+* Shift Operator,
+* Relational Operator,
+* Bitwise Operator,
+* Logical Operator,
+* Ternary Operator and
+* Assignment Operator.
+
+
+Q7. Explain about increment and decrement operator and give an example?
+Ans: Increment operator in Java is used to increase the value by 1.
+For example: int i=1 and i++ . It increases the value of i by 1.
+Increment operators are of two types:
+1. Prefix increment operator = ++i.
+2. Postfix increment operator = i++.
+
+
+Decrement operator in Java is used to decrease the value by 1.
+For example: int i=10; i-- . It decreases the value by 1.
+Decrement operators are of two types:
+3. Prefix decrement operator = --i.
+4. Postfix decrement operator = i--.

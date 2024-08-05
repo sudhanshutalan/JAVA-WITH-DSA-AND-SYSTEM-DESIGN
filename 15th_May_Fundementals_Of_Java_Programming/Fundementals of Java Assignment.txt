@@ -1,0 +1,36 @@
+﻿Q1. What is programming Language?
+Ans: A programming language is a set of instructions written by a programmer to deliver instructions to the computer to perform and accomplish a task. This set of instructions is usually viewed as incomprehensible code structured following a definite programming language syntax.
+
+
+Q2. Why do we need a programming language?
+Ans: Programming languages help us to interact with the computer. We can deeply engage with the system and make our tasks easier by giving programming instructions to the computer.
+
+
+Q3. What are the features of JAVA?
+Ans: Features of the JAVA programming language are as follows:
+* Java supports multiple inheritance.
+* Java is a purely object oriented programming language.
+* Java supports multithreading.Multithreading is a Java feature that allows concurrent execution of two or more parts of a program for maximum utilisation of CPU.
+* Java is a platform independent language, which means program written and compiled on one machine can run on any other machine having different operating system. Java follows the principle of “Write once run anywhere“.
+
+
+Q4. What is an object?
+Ans: An entity that has state and behaviour are called objects eg., chair, bike, pen, desk etc.  An object is also known as real world entity.
+
+
+Q5. What is a class?
+Ans: A class is a group of objects which have common properties. It is a template or blueprint from which objects are created. It is a logical entity. It can't be physical.
+
+
+Q6. Explain about the main() method in JAVA?
+Ans: The main() is the starting point for JVM to start execution of a Java program. Without the main() method, JVM will not execute the program.The syntax of the main() method is:
+
+
+public static void main(String args[])
+public: It is an access specifier.   
+
+
+Static: Static methods are the method which invokes without creating the objects, so we do not need any object to call the main() method.
+
+
+void: In Java, every method has the return type. Void keyword acknowledges the compiler that main() method does not return any value.
