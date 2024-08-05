@@ -1,0 +1,75 @@
+Q1. What is Git?
+
+Ans: Git is a version control system that allows to track the chnages made in files and collaborate with others. It is used to manage the history of code and to merge changes from different branches.t is a free and open-source software that is available for Windows, macOS, and Linux. GIT is a software and can be installed on the computer.
+
+
+
+Q2. What do you understand by the term 'Version Control System'?
+
+Ans: Version control is defined as a system that tracks the progress of code across the software development lifecycle and its multiple iterations. The version control system maintains a record of every change complete with authorship, timestamp, and other details – and also aids in managing change.
+The process of monitoring and managing changes to software code is known as version control, also sometimes referred to as revision control or source control systems. Software technologies called version control systems assist software development teams in tracking changes to source code over time.
+
+
+
+Q3. What is Github?
+
+Ans: Github is a web-based hosting service for Git repositories. Github is an online platform that allows to store and share the code with others. It is a popular platform for developers to collaborate on projects and to share code. It is not that Github is the only provider of Git repositories, but it is one of the most popular ones.	
+
+
+
+Q4. Mention some popular Git hosting services.
+
+Ans: Some Popular Git Providing Services are :
+      a. Github
+      b. CodeBase
+      c. SourceForge
+      d. Gitlab
+      e. Bitbucket
+      f. LaunchPad
+      g. Perforce
+      
+      
+      
+Q5. Different types of version control systems.
+
+Ans: Types of version control systems are:
+	a. Local version control
+	b. Central version control
+	c. Distributed version control
+	
+	
+	
+	
+Q6. What benefits come with using git?
+
+Ans: 
+     a. Collaboration: Git and GitHub make it easy for developers to work together on the same codebase. Each developer can create their own
+	branch to work on their code changes independently. When they’re ready, they can merge their changes back into the main branch, ensuring
+	that everyone is working with the latest code. 
+
+     b. Version Control: Git allows developers to keep track of changes to their code over time, making it easy to roll back to a
+	previous version if necessary. This is especially important when working on large projects with many contributors.
+ 
+     c. Open-Source Contributions: GitHub is home to many open-source projects, making it easy for developers to contribute to projects they’re
+	interested in. By contributing to open-source projects, developers can improve their skills, gain exposure to new technologies, and
+	build their portfolio.
+	
+     d. Code Reviews: With Git and GitHub, code reviews are easier and more efficient. Developers can create pull requests to ask for feedback
+	on their code changes. Other team members can review the code, leave comments, and suggest changes before the code is merged into the
+	main branch.
+
+     e. Project Management: GitHub provides tools for managing projects, including issue tracking, project boards, and milestones. This makes it
+	easy for teams to stay organized and track progress.
+	
+
+
+Q7. What is a Git repository?
+
+Ans: A Git repository is the most basic element of Github. Repository is a place where we can store, code, files and each file's revision history.
+
+Q8. How you can initialize a repository in a Git?
+
+Ans: we can initialize git repository by using 'git init' command.
+
+
+
