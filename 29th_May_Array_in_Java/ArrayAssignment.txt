@@ -1,0 +1,68 @@
+Q1. What is the default value of Array for differenrt Data Types?
+
+Ans:	boolean   :   False
+	int       :   0
+	double    :   0.0
+	String    :   null
+	User-defined datatypes : null
+	
+
+
+Q2. Can you pass negative number in Array size?
+
+Ans:  No. Array dimensions cannot have negative size.
+
+
+
+Q3. Where does Array stored in JVM Memory?
+
+Ans:  Memory is allocated in Heap area for Array in Java.
+
+
+
+Q4. What are the disadvantages of Array?
+
+Ans:  a. Array have fixed size which defined at the time of declaration of an array and cannot be decreased or increased later.
+      b. Array have limited support for complex data types such as objects and structures, as the element of an array must all be of same type.
+      c. Inserting or deleting an element from an array can be inefficient and time-consuming because all the elements after the insertion or 
+         deletion point must be shifted to accommodate the change. 	
+        
+ 
+ 
+Q5. What is an Anonymous Array in Java? Give an Example.
+
+Ans: An Array without any name is known as Anonymous Array. This type of array is created for instance use.
+
+	class Demo {
+    public static void main(String[] args)
+    {
+          sum(new int[]{ 1, 2, 3 });
+    }
+    public static void sum(int[] a)
+    {
+        int total = 0;
+        for (int i : a) 
+            total = total + i;
+        System.out.println("The sum is: " + total);
+    }
+}
+
+
+
+Q6. What are the different ways to traverse an Array in Java?
+
+Ans: We can travesre an array in Java using For or ForEach Loop.
+
+
+
+Q7. What is the difference between length and length() in Java? Give an example.
+
+Ans: Length: length is a property of an array which describes about the size of an array.
+
+		int[] simpleArray = {1,2,3,4,5};
+		int simpleArraySize = simpleArray.length;
+		
+    Length(): length() is a method of String class which tells about the no. of characters in a String.
+               
+		String simpleString = "Length example";
+		int listSize = simpleString.length();
