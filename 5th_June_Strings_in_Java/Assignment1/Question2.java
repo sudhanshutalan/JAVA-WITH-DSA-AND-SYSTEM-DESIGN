@@ -1,7 +1,7 @@
 //2.Write a java program to know whether the given string is palindrome
 import java.util.*;
 
-public class Question_2 {
+public class Question2 {
 	public static void main(String args[]) {
 		String original, reverse = ""; 
 		Scanner in = new Scanner(System.in);

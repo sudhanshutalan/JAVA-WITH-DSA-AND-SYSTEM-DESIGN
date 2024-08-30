@@ -1,5 +1,5 @@
 //4.Write a java program to remove a particular character from a String.
-public class Question_4 {
+public class Question4 {
     public static void main(String args[]) {
 		String str = "this is Java";
 		System.out.println(removeCharAt(str, 3));

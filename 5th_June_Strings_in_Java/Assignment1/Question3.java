@@ -1,5 +1,5 @@
 //3.Write a java program to convert upper case to lower case and vice versa.
-public class Question_3 {
+public class Question3 {
     public static void main(String[] args) {
 		String S1 = "sudhanshu kr talan";
 		String S2 = "";
