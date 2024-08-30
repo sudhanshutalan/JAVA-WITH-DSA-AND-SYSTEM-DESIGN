@@ -1,0 +1,221 @@
+1. What is Inheritance in Java?
+Ans: Inheritance is a concept in Java where one class (called the subclass or child class) can inherit the properties and methods of another class (called the superclass or parent class). It allows code reuse and makes it easier to create and maintain an application.
+
+
+
+2. What is a superclass and subclass?
+Ans: 
+   a. Superclass: The class whose properties and methods are inherited by another class. It is also called the parent class.
+   b. Subclass: The class that inherits from the superclass. It is also called the child class.
+
+        class Animal { // Superclass
+            void eat() {
+                System.out.println("This animal eats food.");
+            }
+        }
+
+        class Dog extends Animal { // Subclass
+            void bark() {
+                System.out.println("The dog barks.");
+            }
+        }
+
+
+
+3. How is Inheritance implemented/achieved in Java?
+Ans: Inheritance in Java is implemented using the `extends` keyword. When a class extends another class, it automatically inherits all the nonprivate methods and variables of the superclass.
+
+        class Animal { 
+            void eat() {
+                System.out.println("This animal eats food.");
+            }
+        }
+
+        class Dog extends Animal { // Inheritance
+            void bark() {
+                System.out.println("The dog barks.");
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Dog dog = new Dog();
+                dog.eat(); // Inherited method
+                dog.bark();
+            }
+        }
+
+
+
+4. What is polymorphism?
+Ans: Polymorphism means "many forms." In Java, it allows one method to do different things based on the object it is acting upon. It mainly comes in two forms: method overloading (compiletime polymorphism) and method overriding (runtime polymorphism).
+
+5. Differentiate between method overloading and overriding.
+Ans:
+    Method Overloading:
+    Same method name but different parameters (number or type).
+    Happens within the same class.
+    It is a compiletime polymorphism.
+    
+    Method Overriding:
+    Same method name and parameters but in a subclass.
+    Happens between a superclass and a subclass.
+    It is a runtime polymorphism.
+
+    Example:
+
+    Method Overloading:
+
+        class Math {
+            int add(int a, int b) {
+                return a + b;
+            }
+
+            int add(int a, int b, int c) {
+                return a + b + c;
+            }
+        }
+
+
+    Method Overriding:
+
+        class Animal {
+            void sound() {
+                System.out.println("Animal makes a sound.");
+            }
+        }
+
+        class Dog extends Animal {
+            @Override
+            void sound() {
+                System.out.println("Dog barks.");
+            }
+        }
+
+
+6. What is an abstraction? Explain with an example.
+Ans: Abstraction is the concept of hiding the complex implementation details and showing only the essential features of an object. It is achieved in Java using abstract classes and interfaces.
+
+        abstract class Vehicle { // Abstract class
+            abstract void start(); // Abstract method
+
+            void stop() {
+                System.out.println("Vehicle stopped.");
+            }
+        }
+
+        class Car extends Vehicle {
+            void start() {
+                System.out.println("Car started.");
+            }
+        }
+
+        public class Main {
+            public static void main(String[] args) {
+                Vehicle myCar = new Car();
+                myCar.start(); // Outputs: Car started.
+                myCar.stop(); // Outputs: Vehicle stopped.
+            }
+        }
+
+
+7. What is the difference between an abstract method and a final method in Java? Explain with an example.
+Ans:
+    Abstract Method:
+    Declared with the `abstract` keyword.
+    Has no body; it must be implemented in a subclass.
+    
+    Final Method:
+    Declared with the `final` keyword.
+    Cannot be overridden by subclasses.
+
+    Example:
+
+    Abstract Method:
+
+        abstract class Animal {
+            abstract void makeSound(); // No implementation
+        }
+
+        class Dog extends Animal {
+            void makeSound() {
+                System.out.println("Dog barks.");
+            }
+        }
+
+
+    Final Method:
+
+        class Animal {
+            final void sleep() {
+                System.out.println("Animal sleeps.");
+            }
+        }
+
+        class Dog extends Animal {
+            // Cannot override sleep() because it is final
+        }
+
+
+8. What is the final class in Java?
+Ans: A final class is a class that cannot be extended or inherited by any other class. It is declared using the `final` keyword.
+
+        final class Vehicle {
+            void drive() {
+                System.out.println("Driving a vehicle.");
+            }
+        }
+
+
+9. Differentiate between abstraction and encapsulation.
+Ans:
+    Abstraction:
+    Focuses on hiding the implementation details and showing only the essential features.
+    Achieved using abstract classes and interfaces.
+    
+    Encapsulation:
+    Focuses on bundling the data (variables) and methods that operate on the data into a single unit (class).
+    Achieved by making variables private and providing public getter and setter methods.
+
+ 10. Difference between Runtime and Compiletime polymorphism? Explain with an example.
+ Ans: 
+        Compiletime Polymorphism (Method Overloading):
+        The method to be called is determined at compile time.
+        Example: Method overloading.
+        
+        Runtime Polymorphism (Method Overriding):
+        The method to be called is determined at runtime.
+        Example: Method overriding.
+
+Example:
+
+class Math {
+    int add(int a, int b) {
+        return a + b;
+    }
+
+    int add(int a, int b, int c) {
+        return a + b + c;
+    }
+}
+
+
+class Animal {
+    void makeSound() {
+        System.out.println("Animal makes a sound.");
+    }
+}
+
+class Dog extends Animal {
+    @Override
+    void makeSound() {
+        System.out.println("Dog barks.");
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Animal myDog = new Dog();
+        myDog.makeSound(); // Outputs: Dog barks.
+    }
+}
