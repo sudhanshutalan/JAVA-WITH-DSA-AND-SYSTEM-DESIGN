@@ -1,0 +1,20 @@
+Q1. What is Mutable String in Java? Explain with an example
+Ans: Mutable means changing over time or that can be changed. In a mutable string, we can change the value of the string and JVM doesn’t create a new object. In a mutable string, we can change the value of the string in the same object.To create a mutable string in java, Java has two classes StringBuffer and StringBuilder.
+
+
+public class Question_1 {
+    public static void main(String[] args) {
+        StringBuffer str1 = new StringBuffer("Hello");
+        StringBuilder str2 = new StringBuilder("Kapil");
+
+        System.out.println("Value of str1 before change: "+str1);
+        System.out.println("Value of str2 before change: "+str2);
+
+        str1.append(" World!");
+        str2.append(" Dev");
+
+        System.out.println("Value of str2 after change: "+str1);
+        System.out.println("Value of str2 after change: "+str2);
+
+    }
+}
