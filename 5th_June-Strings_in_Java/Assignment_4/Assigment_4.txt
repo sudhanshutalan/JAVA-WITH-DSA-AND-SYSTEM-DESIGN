@@ -62,4 +62,21 @@ Ans:
 
 Q7. Write a program to delete all consonants from the string "Hello, have a good day".
 Ans:
-     
+    import java.util.Scanner;
+    class Test{
+        String remVowel(String str){
+            return str.replaceAll("[BCDFGHJKLMNPQRSTVWXYZbcdfghjklmnpqrstvwxyz]","");
+        }
+    }
+
+    public class Question_7{
+        public static void main(String[] args) {
+            Scanner scan = new Scanner(System.in);
+            Test obj = new Test();
+            System.out.print("Enter a Word or Sentence: ");
+            String str = scan.nextLine();
+            String res = obj.remVowel(str);
+            System.out.println("String after removing consonents: "+res);
+            scan.close();
+        }
+    }
