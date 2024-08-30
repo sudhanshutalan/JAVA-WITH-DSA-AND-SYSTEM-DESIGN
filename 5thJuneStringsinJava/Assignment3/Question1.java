@@ -1,5 +1,5 @@
 
-public class Question_1 {
+public class Question1 {
     public static void main(String[] args) {
         StringBuffer str1 = new StringBuffer("Hello");
         StringBuilder str2 = new StringBuilder("Kapil");
