@@ -1,0 +1,65 @@
+Q1. Write a simple string program to take input from a user
+Ans: 
+        import java.util.Scanner;
+        public class Question_1 {
+            public static void main(String[] args) {
+                Scanner sc = new Scanner(System.in);
+                System.out.print("Enter a Sting: ");
+                String s1 = sc.nextLine();
+                System.out.println("Your entered String is: "+s1);
+                sc.close();
+            }
+        }
+
+
+
+Q2. How do you concatenate two strings in Java? Give an example.
+Ans: We can concatenate the strings using the + operator
+    String s1 = "Deepak";
+    String s2 = "Sharma";
+    String s3 = s1+s2;
+
+
+
+Q3. How do you find the length of a string in Java? Explain with an example.
+Ans: we can find length of a string using length() method in java.
+    String s1 = "Deepak Sharma";
+    System.out.println(s1.length());
+
+
+
+Q4. How do you compare two strings in Java? Give an Example
+Ans: we can compare the string using "==" operator and equals() method in java.
+     String s1="Deepak";
+     String s2 = new String("Deepak");
+     System.out.println(s1==s2); // false
+     System.out.println(s1.equals(s2));// true
+
+
+
+Q5. Write a program to find the length of the string "refrigerator".
+Ans: 
+    public class Question_5 {
+        public static void main(String[] args) {
+            String s = new String("refrigerator");
+            System.out.println("Length: "+s.length());
+        }    
+    }
+
+
+
+Q6. Write a program to check if the letter 'e' is present in the word 'Umbrella'.
+Ans: 
+    public class Question_6{
+        public static void main(String[] args){
+            String str = "Umbrella";
+            System.out.println("The element is present at index: "+str.indexOf("e"));
+            
+        }
+    }
+
+
+
+Q7. Write a program to delete all consonants from the string "Hello, have a good day".
+Ans:
+     
