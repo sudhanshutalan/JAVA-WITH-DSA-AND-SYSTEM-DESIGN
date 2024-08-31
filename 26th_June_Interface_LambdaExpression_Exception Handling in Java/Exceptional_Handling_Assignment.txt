@@ -1,0 +1,108 @@
+1. Explain different types of Errors in Java?
+Ans: In Java, errors are serious problems that a program should not try to handle. Errors are usually caused by the environment in which the application is running. Here are the main types of errors:
+
+        a.Syntax Errors: Mistakes in the code that violate the rules of the Java language. These are caught by the compiler.
+        b.Runtime Errors: Errors that occur while the program is running, like dividing by zero.
+        c.Logical Errors: The program runs, but the output is not what was expected due to a flaw in the logic.
+        d.JVM Errors:
+                OutOfMemoryError: When the Java Virtual Machine (JVM) runs out of memory.
+                StackOverflowError: When the stack memory is exhausted, often due to deep or infinite recursion.
+                LinkageError: Issues with linking libraries or classes.
+
+
+
+2. What is an Exception in Java?
+Ans: An exception is an event that disrupts the normal flow of a program. It occurs during the execution of a program and can be caused by a variety of issues, like trying to access an array out of its bounds or dividing by zero. Exceptions are less serious than errors and can be handled by the program.
+
+
+
+3. How can you handle exceptions in Java? Explain with an example.
+Ans: we can handle exceptions in Java using the try, catch, and finally blocks.
+
+ try: Contains the code that might throw an exception.
+ catch: Used to handle the exception if it occurs.
+ finally: Executes code after the trycatch block, regardless of whether an exception was thrown or not.
+
+        public class Main {
+            public static void main(String[] args) {
+                try {
+                    int division = 10 / 0; // This will cause an exception
+                    System.out.println("Result: " + division);
+                } catch (ArithmeticException e) {
+                    System.out.println("Cannot divide by zero."); // Handles the exception
+                } finally {
+                    System.out.println("This block always runs.");
+                }
+            }
+        }
+
+
+
+
+4. Why do we need exception handling in Java?
+Ans: Exception handling is needed to manage unexpected situations that may occur during program execution. Without exception handling, a program may crash or produce incorrect results when an error occurs. By handling exceptions, we can:
+        * Prevent the program from crashing.
+        * Provide informative error messages to the user.
+        * Ensure the program continues to run even after an error occurs.
+
+
+
+5. What is the difference between an Exception and an Error in Java?
+Ans: Exception:
+        Less severe than errors.
+        Can be caught and handled by the program.
+        Examples: IOException, SQLException, ArithmeticException.
+        
+    Error:
+        More severe, typically caused by the environment.
+        Cannot usually be handled by the program.
+        Examples: OutOfMemoryError, StackOverflowError.
+
+
+
+6. Name the different types of exceptions in Java.
+Ans: There are two main types of exceptions in Java:
+
+    Checked Exceptions:
+        Checked at compile time.
+        Must be either caught or declared in the method signature using throws.
+        Examples: IOException, SQLException.
+    
+    Unchecked Exceptions (Runtime Exceptions):
+        Checked at runtime.
+        Do not need to be caught or declared.
+        Examples: NullPointerException, ArrayIndexOutOfBoundsException.
+
+
+
+7. Can we just use try without finally and catch blocks?
+Ans: No, we cannot just use a try block without either a catch or finally block. The try block must be followed by at least one catch block or a finally block to handle the exception or ensure some code runs after the try block.
+
+ try with catch:
+  java
+  try {
+      // Code that might throw an exception
+  } catch (ExceptionType e) {
+      // Code to handle the exception
+  }
+  
+
+ try with finally:
+  java
+  try {
+      // Code that might throw an exception
+  } finally {
+      // Code that runs after the try block, no matter what
+  }
+  
+
+ try with both catch and finally:
+  java
+  try {
+      // Code that might throw an exception
+  } catch (ExceptionType e) {
+      // Code to handle the exception
+  } finally {
+      // Code that runs after the try block, no matter what
+  }
+  
