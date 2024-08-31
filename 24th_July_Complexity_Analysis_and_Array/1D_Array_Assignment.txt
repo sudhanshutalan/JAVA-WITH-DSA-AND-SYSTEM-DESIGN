@@ -1,0 +1,107 @@
+===============================================================================================================================
+
+----------------------------------------------------------------- 1D arrays Assignment --------------------------------------------------------------------------------------
+
+===============================================================================================================================
+
+1. WAP to print the sum of all the elements present on even indexes in the given array.
+Sol:
+public class sumOfAllEveIdx {
+    public static void main(String[] args) 
+    {
+        int arr[] = { 1, 2, 4, 5, 7, 8, 9, 4, 6 };
+        int sum = 0;
+        for (int i = 0; i < arr.length; i=i+2) 
+        {
+           
+                sum = sum + arr[i];
+            
+        }
+        System.out.println(sum);
+    }
+}
+
+
+==============================================================================================================================================
+
+2. WAP to traverse over the elements of the array {1,2,3,4,5,6,7,8} using for each loop and print all even
+elements.
+Sol:
+public class priEveArr {
+
+    public static void main(String[] args) {
+        int arr[] = { 1, 2, 4, 5, 7, 8, 9, 4, 6 };
+        
+        for (int i : arr) {
+
+           if(arr[i]%2 == 0)
+           {
+            System.out.println(arr[i]);
+           }
+
+        }
+        
+    }
+}
+
+
+==============================================================================================================================================
+
+3. WAP to calculate the maximum element in the array {10, 7, -5, 8, 9, 0, -4} using standard library methods for
+calculating the maximum element.
+Sol:
+public class maxEleLib {
+    public static void main(String[] args) {
+        int arr[] = { -1, 7, -5, 90, -9, -9, -4 };
+        int temp = Integer.MIN_VALUE;
+        for (int n : arr) {
+            temp = Math.max(temp, n);
+        }
+        System.out.println(temp);
+    }
+
+}
+
+
+===============================================================================================================================
+
+4. WAP to find out the second largest element in the input array {34,21,54,65,43}.
+Sol:
+
+public class secLarEle {
+    public static void main(String[] args) {
+        int arr[] = { 34, 215, 89, 65, 93 , 345 , 821 };
+        int max=0;
+        int idx = 0;
+        int seMax = 0;
+        // first largest
+        for (int i = 0; i < arr.length; i++) 
+        {
+            
+                if (arr[i] > max) 
+                {
+                        max = arr[i];
+                        idx = i;
+                }
+
+        }
+            System.out.println(max);
+            System.out.println(idx);
+
+        // second largest
+
+         for (int i = 0; i < arr.length; i++) 
+        {
+            
+                if (arr[i] > seMax && arr[i] != max ) 
+                {
+                        {
+                            seMax = arr[i];
+                        }
+                }
+
+        }
+            System.out.println(seMax);
+    }
+}     
+
