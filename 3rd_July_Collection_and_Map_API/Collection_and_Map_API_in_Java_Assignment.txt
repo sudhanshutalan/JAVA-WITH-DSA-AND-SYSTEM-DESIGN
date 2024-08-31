@@ -154,7 +154,7 @@ Ans:
         TreeSet: 
             You can provide a custom Comparator to define the order of elements, making it flexible for cases where you need a specific sorting criteria.
 
-===============
+
 
 7. What is the difference between Array and ArrayList?
 Ans:
@@ -194,7 +194,7 @@ Ans:
         ArrayList: 
             Offers a wide range of methods and features, such as adding, removing, searching, sorting, and more, thanks to its integration with the Collections Framework.
 
-===============
+
 
 8. What is a Map in Java?
 Ans:
@@ -210,50 +210,47 @@ HashMap , TreeMap LinkedHashMap and ConcurrentHashMap
 
 10. What is the difference between HashMap and TreeMap?
 Ans:
+    Underlying Data Structure:
+        HashMap: 
+            It uses a hash table as the underlying data structure to store key-value pairs. Hashing allows for fast average-case performance for common operations like inserting, retrieving, and deleting elements. The order of elements in a HashMap is not guaranteed and can be arbitrary.
+        TreeMap: 
+            It uses a Red-Black Tree as the underlying data structure to maintain the key-value pairs in sorted order. This ensures that elements in a TreeMap are sorted according to the natural order (determined by the key's Comparable implementation) or a custom ordering defined by a Comparator.
 
-Underlying Data Structure:
-HashMap: 
-It uses a hash table as the underlying data structure to store key-value pairs. Hashing allows for fast average-case performance for common operations like inserting, retrieving, and deleting elements. The order of elements in a HashMap is not guaranteed and can be arbitrary.
-TreeMap: 
-It uses a Red-Black Tree as the underlying data structure to maintain the key-value pairs in sorted order. This ensures that elements in a TreeMap are sorted according to the natural order (determined by the key's Comparable implementation) or a custom ordering defined by a Comparator.
+    Ordering:
+        HashMap: 
+            Elements in a HashMap are not sorted, and there is no specific order guaranteed. The order in which elements are stored may change over time.
+        TreeMap: 
+            Elements in a TreeMap are always sorted in ascending order based on the keys. This allows for range queries and efficient operations requiring a specific order.
 
-Ordering:
-HashMap: 
-Elements in a HashMap are not sorted, and there is no specific order guaranteed. The order in which elements are stored may change over time.
-TreeMap: 
-Elements in a TreeMap are always sorted in ascending order based on the keys. This allows for range queries and efficient operations requiring a specific order.
+    Performance:
+        HashMap: 
+            Offers constant-time (O(1)) average-case performance for common operations like adding, retrieving, and deleting elements. It is generally faster than TreeMap for these operations.
+        TreeMap: 
+            Provides O(log n) average-case performance for common operations, where "n" is the number of elements. While it is not as fast as HashMap for individual operations, it excels in maintaining elements in sorted order.
 
-Performance:
-HashMap: 
-Offers constant-time (O(1)) average-case performance for common operations like adding, retrieving, and deleting elements. It is generally faster than TreeMap for these operations.
-TreeMap: 
-Provides O(log n) average-case performance for common operations, where "n" is the number of elements. While it is not as fast as HashMap for individual operations, it excels in maintaining elements in sorted order.
+    Duplicates
+        HashMap: 
+            Allows only one null key but permits multiple null values. It does not allow duplicate keys (each key must be unique).
+        TreeMap: 
+            Does not allow duplicate keys, but it can have duplicate values. Keys are unique and are used to establish order.
 
-Duplicates
-HashMap: 
-Allows only one null key but permits multiple null values. It does not allow duplicate keys (each key must be unique).
-TreeMap: 
-Does not allow duplicate keys, but it can have duplicate values. Keys are unique and are used to establish order.
+    Iterating Elements:
+        HashMap: 
+            The iteration order of elements is not guaranteed and can be arbitrary. You can use an iterator or for-each loop to iterate through the elements.
+        TreeMap: 
+            Elements are guaranteed to be iterated in ascending order based on the keys. This makes it suitable for tasks requiring sorted traversal.
 
-Iterating Elements:
-HashMap: 
-The iteration order of elements is not guaranteed and can be arbitrary. You can use an iterator or for-each loop to iterate through the elements.
-TreeMap: 
-Elements are guaranteed to be iterated in ascending order based on the keys. This makes it suitable for tasks requiring sorted traversal.
-
-Custom Ordering:
-HashMap: 
-Does not support custom ordering because it uses hash codes for storing elements.
-TreeMap: 
-Allows you to provide a custom Comparator to define the order of elements. This makes it flexible for defining custom sorting criteria
+    Custom Ordering:
+        HashMap: 
+            Does not support custom ordering because it uses hash codes for storing elements.
+        TreeMap: 
+            Allows you to provide a custom Comparator to define the order of elements. This makes it flexible for defining custom sorting criteria
 
 
 
 11. How do you check if a key exists in a Map in Java?
 Ans:
-In Java, you can check if a key exists in a Map by using the containsKey(Object key) method. This method is defined in the Map interface, and it is implemented by all classes that implement the Map interface, such as HashMap, TreeMap, and others.
-
-Here's how you can use the containsKey method to check if a key exists in a Map:
+In Java, we can check if a key exists in a Map by using the containsKey(Object key) method. This method is defined in the Map interface, and it is implemented by all classes that implement the Map interface, such as HashMap, TreeMap, and others.
 
 import java.util.HashMap;
 import java.util.Map;
